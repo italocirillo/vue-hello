@@ -15,7 +15,11 @@
     <!-- Vue -->
     <div id="app">
 
-        <h1>{{ message }}</h1>
+        <div class="container">
+            <h1>{{ message }}</h1>
+            <img v-bind:src="imgRandom" v-bind:alt="imgAlt"> <!-- v-bind forma estesa -->
+        </div>
+        
     </div>
     <!-- Fine Vue -->
 
