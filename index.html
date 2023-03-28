@@ -16,10 +16,15 @@
     <div id="app">
 
         <div class="container">
-            <h1>{{ message }}</h1>
+            <h1 :class="coloreTitolo">{{ message }}</h1>     <!-- v-bind forma contratta -->
             <img v-bind:src="imgRandom" v-bind:alt="imgAlt"> <!-- v-bind forma estesa -->
+            <div class="bottoni">
+                <button class="bottone" id="rosso" @click="cambiaColoreRosso">Rosso</button>             <!-- v-on forma contratta -->
+                <button class="bottone" id="biano" v-on:click="cambiaColoreBianco">Bianco</button>       <!-- v-on forma estesa -->
+                <button class="bottone" id="verde" @click="cambiaColoreVerde">Verde</button>
+            </div>
         </div>
-        
+
     </div>
     <!-- Fine Vue -->
 

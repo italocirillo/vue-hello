@@ -5,4 +5,37 @@ body{
     width: 40%;
     text-align: center;
     margin: 0 auto;
+    border: 1px dashed black;
+    padding: 1em;
+}
+.bottoni{
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    padding-top: 1em;
+}
+.rosso{
+    color: red;
+}
+.bianco{
+    color: white;
+}
+.verde{
+    color: green;
+}
+
+.bottone{
+    font-weight: 900;
+    border-radius: 20px;
+    font-weight: 8px;
+    cursor: pointer;
+}
+#rosso{
+    background-color: red;
+}
+#bianco{
+    background-color: white;
+}
+#verde{
+    background-color: green;
 }
