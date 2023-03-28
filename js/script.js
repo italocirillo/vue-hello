@@ -1,1 +1,11 @@
-console.log("java collegato")
+console.log("java collegato");
+
+const { createApp } = Vue;
+
+createApp({
+    data() {
+        return {
+            message: "Hello Vue",
+        }
+    },
+}).mount("#app");
